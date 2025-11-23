@@ -12,5 +12,5 @@ A CLI tool for querying threat intelligence APIs.
 - [x] Project structure
 - [x] API client
 - [x] CLI interface
-- [ ] YAML output
+- [x] YAML output
 - [ ] Batch IP processing
