@@ -32,9 +32,6 @@ def check_abuseipdb(ip_address):
     try:
         response = requests.get(url, headers=headers, params=params)
         response.raise_for_status()
-
-        print(f"DEBUG: Status code: {response.status_code}")
-        print(f"DEBUG: Response: {response.json()}")
         return response.json()
     except requests.exceptions.RequestException as e:
         print(f"❌ Error querying AbuseIPDB: {e}")
